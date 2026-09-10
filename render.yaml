@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: urban-empire-auction
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GM_PASSWORD
+        sync: false
